@@ -2,8 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vibur:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="main.js" defer></script>
     <title>Rock Paper Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container hidden">
+      <h1 class="neonText">
+        neon <br />
+        lights
+      </h1>
+      <h2 class="neonText neon-h2 hover-big">Play again?</h2>
+    </div>
+    <div class="header end-game">
+      <h1>Rock</h1>
+      <h1>Paper</h1>
+      <h1>Scissors</h1>
+    </div>
+    <div class="main end-game">
+      <div class="main-one">Choose Carefully...</div>
+      <div class="main-two">First Score to 5 Wins</div>
+      <div class="scores">
+        <div class="player-score">
+          <img src="./images/neon-questionmark3-removebg-preview.png" />
+          <div>Player Score: 0</div>
+        </div>
+        <div class="computer-score">
+          <img src="./images/neon-questionmark3-removebg-preview.png" />
+          <div>Computer Score: 0</div>
+        </div>
+      </div>
+      <div class="choices">
+        <img class="rock hover" src="./images/rock-removebg-preview.png" />
+        <img class="paper hover" src="./images/paper-removebg-preview.png" />
+        <img
+          class="scissors hover"
+          src="./images/scissors-removebg-preview.png"
+        />
+      </div>
+    </div>
+    <div class="play-again">
+      <div>You won!</div>
+      <button class="btn">Play Again?</button>
+    </div>
+  </body>
 </html>
