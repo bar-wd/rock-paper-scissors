@@ -8,10 +8,15 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/rock-removebg-preview.png"
+    />
     <script src="main.js" defer></script>
     <title>Rock Paper Scissors</title>
   </head>
-  <body>
+  <body class="bg">
     <div class="container hidden">
       <h1 class="neonText">
         neon <br />
@@ -19,12 +24,12 @@
       </h1>
       <h2 class="neonText neon-h2 hover-big">Play again?</h2>
     </div>
-    <div class="header end-game">
+    <div class="header">
       <h1>Rock</h1>
       <h1>Paper</h1>
       <h1>Scissors</h1>
     </div>
-    <div class="main end-game">
+    <div class="main">
       <div class="main-one">Choose Carefully...</div>
       <div class="main-two">First Score to 5 Wins</div>
       <div class="scores">
@@ -38,17 +43,19 @@
         </div>
       </div>
       <div class="choices">
-        <img class="rock hover" src="./images/rock-removebg-preview.png" />
-        <img class="paper hover" src="./images/paper-removebg-preview.png" />
         <img
-          class="scissors hover"
+          class="rock hover transition"
+          src="./images/rock-removebg-preview.png"
+        />
+        <img
+          class="paper hover transition"
+          src="./images/paper-removebg-preview.png"
+        />
+        <img
+          class="scissors hover transition"
           src="./images/scissors-removebg-preview.png"
         />
       </div>
-    </div>
-    <div class="play-again">
-      <div>You won!</div>
-      <button class="btn">Play Again?</button>
     </div>
   </body>
 </html>
